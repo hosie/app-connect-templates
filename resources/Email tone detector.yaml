@@ -169,4 +169,5 @@ integration:
     This template analyses the tone of your emails and alerts you when you
     receive emails with the same tone from the same sender. You specify the
     number of emails and the time period you want to monitor.
+  todo: "To refer to these instructions while editing the flow, open [the github page](https://github.com/ot4i/app-connect-templates/blob/master/resources/markdown/Email%20tone%20detector_instructions.md) (opens in a new window).\n\n1. Click **Create flow** to start using the template.\n1. Connect to your [Gmail account](http://ibm.biz/acgmail).\n1.\tConnect to your [Watson Tone Analyzer account](http://ibm.biz/acwatsontonea).\n1.\tClick the **Situation detector** node and update the fields according to your business needs.\n1.\tConnect to your [Slack account](http://ibm.biz/acslack).\n1. For the Slack \"Create message\" action select the channel that you want to post your message to.\n1. To start the flow, in the banner open the options menu [&#8942;] then click **Start flow**.\n"
 models: {}
