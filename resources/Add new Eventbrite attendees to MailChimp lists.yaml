@@ -37,7 +37,7 @@ integration:
               branch:
                 - condition:
                     '{{$Trigger.event_id}}':
-                      =: Fill in one of your event IDs
+                      '=': Fill in one of your event IDs
                   execute:
                     - create-action:
                         name: MailChimp Add member to a list
@@ -67,7 +67,7 @@ integration:
                     mappings: []
                 - condition:
                     '{{$Trigger.event_id}}':
-                      =: Fill in another event ID
+                      '=': Fill in another event ID
                   execute:
                     - create-action:
                         name: MailChimp Add member to a list 2
@@ -111,4 +111,7 @@ integration:
         tags:
           - incomplete
   name: Add new Eventbrite attendees to MailChimp lists
+  description: >-
+    This template adds attendees of Eventbrite events to different mailing lists
+    in MailChimp, depending on the event that they sign up to.
 models: {}

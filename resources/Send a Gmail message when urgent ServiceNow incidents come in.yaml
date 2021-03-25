@@ -29,7 +29,7 @@ integration:
               branch:
                 - condition:
                     '{{$Trigger.urgency}}':
-                      =: '1'
+                      '=': '1'
                   execute:
                     - create-action:
                         name: Gmail Create message
@@ -64,4 +64,8 @@ integration:
         tags:
           - incomplete
   name: Send a Gmail message when urgent ServiceNow incidents come in
+  description: >-
+    This template sends an email via Gmail when a highly urgent incident comes
+    in to ServiceNow. This helps you to act quickly on your urgent support
+    incidents!
 models: {}

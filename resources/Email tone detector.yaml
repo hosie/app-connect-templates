@@ -165,4 +165,8 @@ integration:
                   - variable: Situationdetector
                     $ref: '#/trigger/payload/Situation detector'
   name: Email tone detector
+  description: >-
+    This template analyses the tone of your emails and alerts you when you
+    receive emails with the same tone from the same sender. You specify the
+    number of emails and the time period you want to monitor.
 models: {}

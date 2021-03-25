@@ -110,5 +110,10 @@ integration:
                     $ref: >-
                       #/node-output/Google Drive Retrieve file
                       content/response/payload
-  name: Retrieve file content from Google Drive then add the document to the Watson Discovery Service
+  name: >-
+    Retrieve file content from Google Drive then add the document to the Watson
+    Discovery Service
+  description: >-
+    Use this template to retrieve file content from Google Drive and add the
+    same document to the IBM Watson Discovery Service.
 models: {}

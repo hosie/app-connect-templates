@@ -46,4 +46,8 @@ integration:
         tags:
           - incomplete
   name: Create a new Trello card when a new event in Eventbrite is added
+  description: >-
+    This template creates a new card in Trello when a new event is added in
+    Eventbrite. You can use this template to track tasks such as checking
+    attendee lists prior to the event.
 models: {}

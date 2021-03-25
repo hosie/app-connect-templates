@@ -478,4 +478,8 @@ integration:
                   - variable: Setvariable
                     $ref: '#/node-output/Set variable/response/payload'
   name: Welcome guide setup 1 - Add products to Salesforce
+  description: >-
+    Use this flow in conjuction with the templates for 'Welcome guide part 3 -
+    Create a CSV file in Box of the products in Salesforce' and 'Welcome guide
+    part 4 - Flower order API' to set up Salesforce products.
 models: {}

@@ -41,4 +41,7 @@ integration:
                   - variable: Trigger
                     $ref: '#/trigger/payload'
   name: Create a lead in Sugar CRM when a new Wufoo form is submitted
+  description: >-
+    Use this template to create a lead in Sugar CRM when a new form entry is
+    submitted from Wufoo.
 models: {}

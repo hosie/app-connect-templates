@@ -81,8 +81,8 @@ integration:
                               template: Info
                           - logMessage:
                               template: >-
-                                It's {{$formatDate($millis(), "dddd", "UTC")}}
-                                - Checking who is on call.
+                                It's {{$formatDate($millis(), "dddd", "UTC")}} -
+                                Checking who is on call.
               output-schema: {}
           - custom-action:
               name: HTTP Invoke method
@@ -566,4 +566,7 @@ integration:
                   - logMessage:
                       template: Slack topic successfully set!
   name: Get PagerDuty schedule then update Slack group and topic
+  description: >-
+    Use this template to manage members of a Slack group based on a PagerDuty
+    schedule.
 models: {}

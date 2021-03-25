@@ -163,4 +163,9 @@ integration:
                       status-code: 200
               output-schema: {}
   name: Use Slack to notify of unprocessed Kronos leave requests
+  description: >-
+    This template contains a flow to notify you when leave requests in Kronos
+    require attention. A scheduler runs the flow every Monday morning to
+    retrieve leave records from Kronos then notify you on Slack if any requests
+    have a status of 'pending'.
 models: {}

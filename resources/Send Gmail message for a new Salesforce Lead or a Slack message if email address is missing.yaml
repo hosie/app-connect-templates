@@ -37,7 +37,7 @@ integration:
               branch:
                 - condition:
                     '{{$Trigger.Email}}':
-                      =: ''
+                      '=': ''
                   execute:
                     - create-action:
                         name: Slack Create message
@@ -105,4 +105,8 @@ integration:
   name: >-
     Send Gmail message for a new Salesforce Lead or a Slack message if email
     address is missing
+  description: >-
+    Use this template to send your new Salesforce leads an email. If there is no
+    email ID included then send a Slack message to your team that someone needs
+    to call the lead.
 models: {}

@@ -661,7 +661,12 @@ integration:
                 title: Output Schema
                 type: object
   name: >-
-    API to retrieve source code repository details and send an email about inactive repositories
+    API to retrieve source code repository details and send an email about
+    inactive repositories
+  description: >-
+    Use this template to find inactive source code repositories, then send an
+    email to the repository owner so that they know which repositories to
+    archive.
 models:
   repository:
     name: repository

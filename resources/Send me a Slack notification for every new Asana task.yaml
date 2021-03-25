@@ -43,4 +43,7 @@ integration:
                   - variable: Trigger
                     $ref: '#/trigger/payload'
   name: Send me a Slack notification for every new Asana task
+  description: >-
+    Use this template to send a Slack notification when a new task is created in
+    Asana.
 models: {}

@@ -465,4 +465,7 @@ integration:
               target:
                 $ref: '#/integration/action-interfaces/action-interface-3'
   name: Open Banking - Account information data load
+  description: >-
+    This flow aggregates the account information of users with active consents
+    set up in Yapily and stores it in IBM Cloudant
 models: {}

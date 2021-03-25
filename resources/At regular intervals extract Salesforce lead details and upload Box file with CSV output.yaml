@@ -99,5 +99,11 @@ integration:
                     $ref: '#/node-output/Salesforce Retrieve leads/response/payload'
                   - variable: SalesforceRetrieveleadsMetadata
                     $ref: '#/node-output/Salesforce Retrieve leads/response'
-  name: At regular intervals extract Salesforce lead details and upload Box file with CSV output
+  name: >-
+    At regular intervals extract Salesforce lead details and upload Box file
+    with CSV output
+  description: >-
+    This template gathers 10 leads from Salesforce, uses their names and email
+    addresses to build a CSV file, then outputs the file to Box. The flow
+    triggers once per day at 00:00 UTC.
 models: {}

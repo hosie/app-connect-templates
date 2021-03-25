@@ -45,4 +45,7 @@ integration:
                   - variable: Trigger
                     $ref: '#/trigger/payload'
   name: GoogleSheetRowNewPardotProspect
+  description: >-
+    Use this template to create new prospect in Salesforce Pardot when a new row
+    is appended in Google Sheets.
 models: {}

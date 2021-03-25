@@ -40,4 +40,7 @@ integration:
         tags:
           - incomplete
   name: Send me a Twilio SMS for every new Salesforce contact
+  description: >-
+    Use this template to send an SMS from Twilio when a new contact is added in
+    Salesforce.
 models: {}

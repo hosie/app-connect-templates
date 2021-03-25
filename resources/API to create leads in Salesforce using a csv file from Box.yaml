@@ -291,6 +291,10 @@ integration:
                             $ref: '#/node-output/CSV Parser Parse/response/payload'
               output-schema: {}
   name: API to create leads in Salesforce using a csv file from Box
+  description: >-
+    This API takes a URL to a Box document, and an optional event name. Using
+    that information it retrieves the document, parses it to find the new leads
+    generated and creates or updates those leads in Salesforce.
 models:
   leads:
     name: leads

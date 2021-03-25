@@ -85,7 +85,7 @@ integration:
               branch:
                 - condition:
                     '{{$Trigger.answers[0].answer}}':
-                      =: Wine
+                      '=': Wine
                   execute:
                     - retrieve-action:
                         name: Salesforce Retrieve order product
@@ -162,7 +162,7 @@ integration:
                           template: '{{$SalesforceRetrieveorderproduct.OrderId}}'
                 - condition:
                     '{{$Trigger.answers[0].answer}}':
-                      =: Beer
+                      '=': Beer
                   execute:
                     - retrieve-action:
                         name: Salesforce Retrieve order product 2
@@ -239,7 +239,7 @@ integration:
                           template: '{{$SalesforceRetrieveorderproduct2.OrderId}}'
                 - condition:
                     '{{$Trigger.answers[0].answer}}':
-                      =: Juice
+                      '=': Juice
                   execute:
                     - retrieve-action:
                         name: Salesforce Retrieve order product 3
@@ -447,7 +447,7 @@ integration:
                     mappings: []
                 - condition:
                     '{{$sum($EventbriteRetrieveattendees.quantity)}}':
-                      =: '10'
+                      '=': '10'
                   execute:
                     - create-action:
                         name: Slack Create message 2
@@ -523,4 +523,12 @@ integration:
         tags:
           - incomplete
   name: Arrange welcome drinks for an Eventbrite event
+  description: >-
+    Use this template to organize welcome drinks for an Eventbrite event. Each
+    attendee automatically receives a text message, via Twilio, which they can
+    show on arrival to collect their complimentary drink. Your drinks order in
+    Salesforce is automatically updated each time a new attendee registers. The
+    organizer of the event is kept updated via Slack about the number of
+    attendees registered, and is instructed to check and place the drinks order
+    once your event is fully subscribed!
 models: {}

@@ -92,4 +92,7 @@ integration:
                   - variable: GmailCreatemessage
                     $ref: '#/node-output/Gmail Create message/response/payload'
   name: For large Salesforce opportunities send an email and create an Asana task
+  description: >-
+    This template creates and sends an email via Gmail, and creates an Asana
+    task, when a new high value opportunity is created in Salesforce.
 models: {}

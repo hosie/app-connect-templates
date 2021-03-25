@@ -41,4 +41,8 @@ integration:
                   - variable: Trigger
                     $ref: '#/trigger/payload'
   name: Welcome guide part 1 -  Announce new Eventbrite attendee on Slack
+  description: >-
+    This template creates the flow created in the 'Welcome to IBM App Connect
+    [Part 1 of 4]: Create a simple event-driven flow' video. Whenever a new
+    attendee is added to an Eventbrite event, a message is create in Slack.
 models: {}

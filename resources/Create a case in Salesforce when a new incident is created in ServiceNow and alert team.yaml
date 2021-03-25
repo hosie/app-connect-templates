@@ -56,9 +56,9 @@ integration:
                 - condition:
                     and:
                       - '{{$Trigger.impact}}':
-                          =: '1'
+                          '=': '1'
                       - '{{$Trigger.urgency}}':
-                          =: '1'
+                          '=': '1'
                   execute:
                     - create-action:
                         name: Salesforce Create Case
@@ -107,9 +107,9 @@ integration:
                 - condition:
                     and:
                       - '{{$Trigger.impact}}':
-                          =: '2'
+                          '=': '2'
                       - '{{$Trigger.urgency}}':
-                          =: '2'
+                          '=': '2'
                   execute:
                     - create-action:
                         name: Salesforce Create Case 2
@@ -191,4 +191,10 @@ integration:
   name: >-
     Create a case in Salesforce when a new incident is created in ServiceNow and
     alert team
+  description: >-
+    This template creates a new case in Salesforce when a new incident is
+    created in ServiceNow. If this is an urgent incident, the flow then sends an
+    email via Gmail and a message on Slack to alert the team when a highly
+    urgent incident comes in to ServiceNow. This helps you to act quickly on
+    your urgent support incidents!
 models: {}

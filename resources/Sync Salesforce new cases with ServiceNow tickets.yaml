@@ -90,4 +90,7 @@ integration:
                   - variable: SalesforceRetrieveAccountMetadata
                     $ref: '#/node-output/Salesforce Retrieve Account/response'
   name: Sync Salesforce new cases with ServiceNow tickets
+  description: >-
+    The template creates a new ticket in ServiceNow when a new case is created
+    in Salesforce - helping you to keep your support services in sync!
 models: {}

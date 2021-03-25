@@ -45,4 +45,7 @@ integration:
         tags:
           - incomplete
   name: Send me a Twilio SMS when a new row is added in Google Sheets
+  description: >-
+    Use this template to send an SMS from Twilio when a new row is added in
+    Google Sheets.
 models: {}

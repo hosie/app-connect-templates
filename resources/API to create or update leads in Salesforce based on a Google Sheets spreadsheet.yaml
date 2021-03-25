@@ -185,6 +185,9 @@ integration:
   name: >-
     API to create or update leads in Salesforce based on a Google Sheets
     spreadsheet
+  description: >-
+    This template creates an API to create or update leads in Salesforce for a
+    specific event based on data collected in a Google Sheets spreadsheet.
 models:
   leads:
     name: leads

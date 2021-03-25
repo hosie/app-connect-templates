@@ -100,4 +100,7 @@ integration:
                         Atlassian JIRA Issue  {{$Foreachitem.id}}
                         {{$Foreachitem.fields.priority.name}}
   name: Using the For each node and JSONata to process high priority issues
+  description: >-
+    Use this template to receive a notification in the log for high priority
+    issues.
 models: {}

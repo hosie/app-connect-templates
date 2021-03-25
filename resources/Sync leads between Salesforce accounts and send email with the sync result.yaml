@@ -157,7 +157,8 @@ integration:
                             - Body:
                                 template: >-
                                   Batch retreive process
-                                  {{$BatchprocessOutput.batchInstanceId}} retrieved
+                                  {{$BatchprocessOutput.batchInstanceId}}
+                                  retrieved
                                   {{$BatchprocessOutput.recordsProcessed.success}}
                                   records successfully
                             - Subject:
@@ -182,8 +183,8 @@ integration:
                             - Body:
                                 template: >-
                                   Batch retrieve process
-                                  {{$BatchprocessOutput.batchInstanceId}} failed to
-                                  retrieve
+                                  {{$BatchprocessOutput.batchInstanceId}} failed
+                                  to retrieve
                                   {{$BatchprocessOutput.recordsProcessed.error}}
                                   records
                             - Subject:
@@ -208,7 +209,8 @@ integration:
                             - Body:
                                 template: >-
                                   Batch retrieve process
-                                  {{$BatchprocessOutput.batchInstanceId}} was stopped
+                                  {{$BatchprocessOutput.batchInstanceId}} was
+                                  stopped
                             - Subject:
                                 template: Retrieval of leads stopped
                             - To:
@@ -233,7 +235,8 @@ integration:
                             - text:
                                 template: >-
                                   Batch retrieve process
-                                  {{$BatchprocessOutput.batchInstanceId}} timed out
+                                  {{$BatchprocessOutput.batchInstanceId}} timed
+                                  out
                           $map: 'http://ibm.com/appconnect/map/v1'
                           input:
                             - variable: Trigger
@@ -254,4 +257,10 @@ integration:
                       status-code: 400
               output-schema: {}
   name: Sync leads between Salesforce accounts and send email with the sync result
+  description: >-
+    Use this template to start a batch process using the scheduler node to
+    retrieve leads from Salesforce Account 1 and then create or update leads in
+    Salesforce Account 2. The flow will send a message to Slack to alert you
+    when the batch process has started, and an email will be sent to your
+    preferred email address with the status of the sync.
 models: {}

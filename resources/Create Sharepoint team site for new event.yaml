@@ -139,4 +139,8 @@ integration:
                       #/node-output/Microsoft SharePoint Create
                       list/response/payload
   name: Create Sharepoint team site for new event
+  description: >-
+    This template detects when a new Eventbrite event is created and then
+    automatically creates a site in Microsoft Sharepoint online, adds a list to
+    the site, and then posts a message in Slack.
 models: {}

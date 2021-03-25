@@ -781,4 +781,8 @@ integration:
                     $ref: '#/node-output/Salesforce Retrieve orders/response'
               allow-empty-output: false
   name: Welcome guide setup 3 - Delete flowers and order from Salesforce
+  description: >-
+    This template contains a flow to delete the objects created in 'Welcome
+    guide setup 1 - Add products to Salesforce' and 'Welcome guide setup 2 -
+    Create Sunflower Festival order in Salesforce'.
 models: {}

@@ -134,5 +134,9 @@ integration:
                     $ref: >-
                       #/block/Batch process/node-output/JSON Parser
                       Parse/response/payload
-  name: Sync products from IBM Db2 to Salesforce Commerce Cloud 
+  name: "Sync products from IBM Db2 to Salesforce Commerce Cloud\_"
+  description: >-
+    Use this template to schedule a flow that runs once a day to retrieve new
+    product records that were added to an IBM Db2 database, and then create
+    corresponding products in Salesforce Commerce Cloud.
 models: {}

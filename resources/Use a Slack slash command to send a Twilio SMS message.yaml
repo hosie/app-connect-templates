@@ -41,4 +41,7 @@ integration:
                   - variable: Trigger
                     $ref: '#/trigger/payload'
   name: NewSlackMessageSendTwilioSMS
+  description: >-
+    Use this template to send a Twilio SMS  directly from Slack using a slash
+    command.
 models: {}

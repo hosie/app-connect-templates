@@ -39,4 +39,7 @@ integration:
                   - variable: Trigger
                     $ref: '#/trigger/payload'
   name: Add a Mailchimp subscriber from a Slack slash command
+  description: >-
+    Use this template to add a new member as a subscriber of a Mailchimp list
+    from a Slack slash command.
 models: {}

@@ -64,7 +64,7 @@ integration:
               branch:
                 - condition:
                     '{{$SalesforceRetrieveContact.Email}}':
-                      =: ''
+                      '=': ''
                   execute:
                     - create-action:
                         name: Gmail Create message
@@ -144,4 +144,7 @@ integration:
         tags:
           - incomplete
   name: Sync Salesforce contacts and Mailchimp mailing list subscribers
+  description: >-
+    This template adds new Salesforce contacts to Mailchimp lists and sends an
+    email via Gmail to alert you if a contact's email address is missing.
 models: {}

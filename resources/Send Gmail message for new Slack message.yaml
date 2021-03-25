@@ -41,4 +41,7 @@ integration:
         tags:
           - incomplete
   name: Send Gmail message for new Slack message
+  description: >-
+    This template sends a new Gmail message whenever a new message is received
+    in Slack.
 models: {}

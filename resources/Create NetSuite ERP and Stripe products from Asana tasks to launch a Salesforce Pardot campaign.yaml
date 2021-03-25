@@ -89,4 +89,8 @@ integration:
   name: >-
     Create NetSuite ERP and Stripe products from Asana tasks to launch a
     Salesforce Pardot campaign
+  description: >-
+    When a new task is created in Asana, a new product is created in NetSuite
+    ERP & Stripe, then a campaign for the new product is launched as a
+    Salesforce Pardot Campaign.
 models: {}

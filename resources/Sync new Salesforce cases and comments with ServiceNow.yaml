@@ -214,4 +214,8 @@ integration:
                   - variable: SalesforceRetrievecasecommentMetadata
                     $ref: '#/node-output/Salesforce Retrieve case comment/response'
   name: Sync new Salesforce cases and comments with ServiceNow
+  description: >-
+    This template looks for new cases added in your Salesforce account and syncs
+    this by creating a new ticket in ServiceNow that includes the comments from
+    the original case.
 models: {}

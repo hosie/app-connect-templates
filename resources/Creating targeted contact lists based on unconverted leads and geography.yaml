@@ -155,7 +155,7 @@ integration:
               branch:
                 - condition:
                     '{{$contains($Trigger.description.html, $Foreachitem.City )}}':
-                      =: 'true'
+                      '=': 'true'
                   execute:
                     - create-action:
                         name: Eventbrite Create contact
@@ -233,4 +233,10 @@ integration:
                   mappings: []
               output-schema: {}
   name: Creating targeted contact lists based on unconverted leads and geography
+  description: >-
+    This template triggers on a new Eventbrite event. It retrieves new
+    unconverted leads from Salesforce and checks to see if their city features
+    in the event.  If it does, they they are added to a newly created Eventbrite
+    contact list which can be reviewed by the organisers, who are notified about
+    this list creation in Slack.
 models: {}

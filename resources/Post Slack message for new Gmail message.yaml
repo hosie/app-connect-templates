@@ -40,4 +40,7 @@ integration:
                   - variable: Trigger
                     $ref: '#/trigger/payload'
   name: Post Slack message for new Gmail message
+  description: >-
+    This template creates a new message in Slack whenever a new Gmail message is
+    received.
 models: {}

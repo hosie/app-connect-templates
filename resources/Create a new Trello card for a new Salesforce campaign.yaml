@@ -45,4 +45,7 @@ integration:
                   - variable: Trigger
                     $ref: '#/trigger/payload'
   name: Create a new Trello card for a new Salesforce campaign
+  description: >-
+    This template creates a new card in Trello when a new campaign is created in
+    Salesforce - make sure you never forget to finish that campaign again!
 models: {}

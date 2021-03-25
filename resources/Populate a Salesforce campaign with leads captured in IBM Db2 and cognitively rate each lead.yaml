@@ -156,4 +156,10 @@ integration:
   name: >-
     Populate a Salesforce campaign with leads captured in IBM Db2 and
     cognitively rate each lead
+  description: >-
+    This template detects when a new campaign is created in Salesforce,
+    identifies leads from the associated trade show whose details were stored in
+    an IBM Db2 database, and then populates Salesforce with these leads. The
+    template also uses cognitive analysis to rate the Salesforce leads as Hot,
+    Warm, or Cold.
 models: {}

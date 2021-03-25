@@ -42,4 +42,8 @@ integration:
                   - variable: Trigger
                     $ref: '#/trigger/payload'
   name: Create a new Trello card for a new Salesforce case
+  description: >-
+    This template creates a new card in Trello when a new case is created in
+    Salesforce - make sure you never forget to follow up with that new case
+    again!
 models: {}

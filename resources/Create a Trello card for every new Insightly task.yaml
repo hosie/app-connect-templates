@@ -40,4 +40,7 @@ integration:
                   - variable: Trigger
                     $ref: '#/trigger/payload'
   name: Create a Trello card for every new Insightly task
+  description: >-
+    This template creates a new card in Trello when a new task is created in
+    Insightly.
 models: {}

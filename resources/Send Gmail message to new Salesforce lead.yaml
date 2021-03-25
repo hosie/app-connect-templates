@@ -78,4 +78,8 @@ integration:
                       status-code: 200
               output-schema: {}
   name: Send Gmail message to new Salesforce lead
+  description: >-
+    This template creates and sends an email via Gmail when a new lead is
+    created in Salesforce. If there is no email provided for the lead then we
+    log an error about the missing email.
 models: {}

@@ -37,4 +37,7 @@ integration:
                   - variable: Trigger
                     $ref: '#/trigger/payload'
   name: Create an Asana task from a new Gmail message
+  description: >-
+    This template creates a new task in Asana whenever a new Gmail message is
+    received.
 models: {}

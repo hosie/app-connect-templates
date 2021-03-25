@@ -69,7 +69,7 @@ integration:
               branch:
                 - condition:
                     '{{$SugarCRMRetrieveLeadsMetadata."status-code"}}':
-                      =: '204'
+                      '=': '204'
                   execute:
                     - create-action:
                         name: Sugar CRM Create Lead
@@ -185,4 +185,10 @@ integration:
                       $ref: '#/node-output/Sugar CRM Retrieve Leads/response'
               output-schema: {}
   name: Create a SugarCRM lead and send email for a new Eventbrite attendee
+  description: >-
+    This template detects when a new attendee registers for an Eventbrite event,
+    and for the attendee creates a SugarCRM lead and sends an email. The flow
+    illustrates the use of SugarCRM retrieve and create actions, and the use of
+    an If node to take alternative actions depending on the response from the
+    SugarCRM retrieve action.
 models: {}

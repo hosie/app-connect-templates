@@ -226,9 +226,9 @@ integration:
                 - condition:
                     or:
                       - '{{$contains($Foreachitem.name, ".mp3")}}':
-                          =: 'true'
+                          '=': 'true'
                       - '{{$contains($Foreachitem.name, ".pdf")}}':
-                          =: 'true'
+                          '=': 'true'
                   execute:
                     - custom-action:
                         name: Dropbox Download file content
@@ -398,4 +398,7 @@ integration:
                               bucket/response/payload
               output-schema: {}
   name: Weekly copy Dropbox files to new COS S3 bucket named with date
+  description: >-
+    This template copies files from a Dropbox folder to a new bucket in IBM
+    Cloud Object Storage S3 on a weekly schedule.
 models: {}

@@ -104,4 +104,10 @@ integration:
         tags:
           - incomplete
   name: Create new leads in Marketo by capturing lead names and details in Slack
+  description: >-
+    Capturing leads at an event is never an easy task - consolidating these
+    after the event is even harder. This template allows you to record your
+    leads via the Slack phone app. This then records the contact in a Google
+    sheet (to audit the creation), and then creates the contact in Marketo. A
+    response is then sent on Slack giving the newly created Marketo contact id.
 models: {}

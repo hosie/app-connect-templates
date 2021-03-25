@@ -175,6 +175,11 @@ integration:
                         #/node-output/Salesforce Update or create order
                         product/response
   name: Welcome guide part 4 - Flower order API
+  description: >-
+    This template contains the API created in the 'Welcome to IBM App Connect
+    [Part 4 of 4]: Create flows for an API' video. The API includes a flow to
+    create a Trello card when new flowers are ordered for the festival, and it
+    updates Salesforce with the quantity of flowers needed.
 models:
   order:
     name: order

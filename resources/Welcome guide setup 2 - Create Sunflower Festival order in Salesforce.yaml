@@ -877,4 +877,7 @@ integration:
                   - variable: SalesforceRetrieveproducts2Metadata
                     $ref: '#/node-output/Salesforce Retrieve products 2/response'
   name: Welcome guide setup 2 - Create Sunflower Festival order in Salesforce
+  description: >-
+    Use this template to create the Salesforce order needed for the 'Welcome
+    guide part 4 - Flower order API' template.
 models: {}

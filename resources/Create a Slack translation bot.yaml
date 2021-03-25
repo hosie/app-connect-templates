@@ -235,4 +235,10 @@ integration:
                   - variable: SlackCreatemessage2
                     $ref: '#/node-output/Slack Create message 2/response/payload'
   name: Slack translation bot
+  description: >-
+    Configure a /translate Slack slash command and use this template to
+    translate messages from English to French, and French to English. Use
+    /translate before a message for the bot to identify the language and
+    translate the message. A message then appears in the channel in both
+    languages, allowing for real time multilingual chat.
 models: {}

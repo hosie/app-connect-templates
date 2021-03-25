@@ -120,4 +120,8 @@ integration:
                       #/block/Batch process/node-output/Salesforce Create
                       lead/response/payload
   name: Populate a Salesforce campaign with leads captured in IBM Db2
+  description: >-
+    This template detects when a new campaign is created in Salesforce,
+    identifies leads from the associated trade show whose details were stored in
+    an IBM Db2 database, and then populates Salesforce with these leads.
 models: {}

@@ -110,4 +110,7 @@ integration:
                   - variable: NetSuiteERPRetrieveproductsMetadata
                     $ref: '#/node-output/NetSuite ERP Retrieve products/response'
   name: Load NetSuite ERP products into Salesforce
+  description: >-
+    Use this template to load products from NetSuite ERP into Salesforce at a
+    regular occurring scheduled interval.
 models: {}

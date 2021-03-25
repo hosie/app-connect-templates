@@ -65,4 +65,8 @@ integration:
                       #/node-output/IBM Watson Natural Language Classifier
                       Classify text/response/payload
   name: Classifying Salesforce cases and posting a message in Slack
+  description: >-
+    Use this template to classify the text from a Salesforce case. Then, after
+    the text has been classified, automatically create a message in Slack
+    identifying the type of case that has been raised and the case number.
 models: {}

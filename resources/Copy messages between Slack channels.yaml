@@ -39,4 +39,8 @@ integration:
                   - variable: Trigger
                     $ref: '#/trigger/payload'
   name: Copy messages between Slack channels
+  description: >-
+    Use this template to copy messages between two Slack channels. This can be
+    between channels in the same Slack account or between channels in different
+    Slack accounts.
 models: {}
